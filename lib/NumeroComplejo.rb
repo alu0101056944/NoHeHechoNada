@@ -1,17 +1,17 @@
 
 
-class NumeroComplejo begin
+class NumeroComplejo
 	
-	attr_access :a, :b
+	attr_accessor :a, :b
 
-	define initialize (:a, :b) begin
-		@a, @b = :a, :b
+	def initialize (a, b)
+		@a, @b = a, b
 	end
 
-	define productoEscalar(valorEscalar) begin
-		cadenaEnunciado = "r*(a,b) = #{valorEscalar}*(#{@a},#{@b})"
-		cadenaResultado = "#{@a*valorEscalar} + "#{@b*valorEscalar}i"
-		return (cadenaEnunciado + cadenResultado)
+	def productoEscalar(valorEscalar)
+		cadenaEnunciado = "r*(a,b) = #{valorEscalar}*(#{a},#{b})"
+		cadenaResultado = "#{a*valorEscalar} + #{b*valorEscalar}i"
+		return (cadenaEnunciado + " " +  cadenaResultado)
 	end
 
 end
