@@ -11,4 +11,8 @@ class TestNumeroComplejo < Test::Unit::TestCase
 		assert_equal("1 + 2i", @nc.productoEscalar(1))
 	end
 
+	def testSuma()
+		assert_equal("3 + 5i", @nc.suma(2,3))
+	end
+
 end
