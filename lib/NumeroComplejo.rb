@@ -17,7 +17,9 @@ class NumeroComplejo
 		return "#{@a+c} + #{@b+d}i"
 	end
 
-
+	def resta(c, d)
+		return "#{@a-c} + #{@b-d}i"
+	end
 
 
 
