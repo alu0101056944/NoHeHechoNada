@@ -8,7 +8,7 @@ class TestNumeroComplejo < Test::Unit::TestCase
 	end
 
 	def testProductoEscalar()
-		assert_equal("r*(a,b) = 1*(1,2) 1 + 2i", @nc.productoEscalar(1))
+		assert_equal("1 + 2i", @nc.productoEscalar(1))
 	end
 
 end
